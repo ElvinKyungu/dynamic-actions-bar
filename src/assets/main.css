@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .link-botoom-actions{
+    @apply flex items-center hover:bg-black hover:text-white 
+    delay-100 p-3 cursor-pointer rounded-lg gap-3 transition-colors
+  }
+  .file-result{
+    @apply flex justify-between pr-10 w-full gap-3 cursor-pointer hover:bg-black/5 
+    rounded-2xl py-2 hover:px-3 hover:w-[95%] duration-300 mx-auto
+  }
+  .components-result{
+    @apply hover:w-[95%] w-full  flex items-center justify-between gap-3 cursor-pointer 
+    hover:bg-black/5 rounded-2xl py-2 hover:px-4 
+    duration-300 mx-10
+  }
+  .components-link{
+    @apply block shrink-0 py-1 px-2 text-sm rounded-lg opacity-80 border border-black/50
+  }
+  .app-result{
+    @apply w-[93%] flex items-center gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-3 
+    hover:px-3 duration-300
+  }
+}
